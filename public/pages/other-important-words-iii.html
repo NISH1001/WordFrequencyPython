@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" content="text/html" http-equiv="Content-Type" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" media="screen" href="../index.css" debug="false" />
+    <title>
+      Other Important Words-iii - MerGRE
+    </title>
+  </head>
+  <body class="bg-secondary">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle collapsed"
+            data-target="#app-navbar-collapse"
+            data-toggle="collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a
+            alt="Magoosh Logo"
+            class="navbar-brand"
+            href="/flashcards/vocabulary"
+          >
+            Magoosh
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="app-navbar-collapse">
+          <ul class="nav navbar-nav" role="navigation"></ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container u-margin-T-xl">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <h3 class="clearfix mobile-header">
+            <a href="../index.html">&larr; Other Important Words-iii</a>
+            <small class="text-white pull-right">
+              <i class="fa fa-random"></i>
+              Words you don't know will reappear later
+            </small>
+          </h3>
+          <div class="flashcard-container u-margin-V-m">
+            <div class="flashcard">
+              <div class="front card flashcard-card">
+                <a href="#back"
+                  ><div class="card-block flashcard-content">
+                    <div class="label label-flashcard label-danger">
+                      learning
+                    </div>
+                    <h1 class="text-gray text-center flashcard-word">
+                      gregarious
+                    </h1>
+                  </div> </a
+                ><a
+                  class="card-footer text-center"
+                  data-loading-text="Loading definition..."
+                  href="#back"
+                  >Click to see meaning &rarr;
+                </a>
+              </div>
+              <div class="back card flashcard-card">
+                <div class="card-block flashcard-content">
+                  <div class="label label-flashcard label-danger">learning</div>
+                  <h3 class="flashcard-word"></h3>
+                  <div class="flashcard-text"></div>
+                  <span class="flashcard-status" style="display: none"></span>
+                </div>
+                <a
+                  class="card-footer card-footer-success text-center know-word"
+                  data-loading-text="Loading next word..."
+                  href="#"
+                  ><i class="fa fa-check"></i> I knew this word </a
+                ><a
+                  class="card-footer card-footer-danger text-center dont-know-word"
+                  data-loading-text="Loading next word..."
+                  href="#"
+                  ><i class="fa fa-remove"></i>
+                  I didn't know this word
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="text-white">
+            You have mastered <span id="mastered-flashcards-count">0</span> out
+            of 81 words
+          </div>
+          <div class="progress">
+            <div
+              id="mastered-flashcards-progress"
+              class="progress-bar progress-bar-success"
+              style="width: 0.00%;"
+            ></div>
+          </div>
+          <div class="text-white">
+            You are reviewing <span id="reviewing-flashcards-count">0</span> out
+            of 81 words
+          </div>
+          <div class="progress">
+            <div
+              id="reviewing-flashcards-progress"
+              class="progress-bar progress-bar-warning"
+              style="width: 0.00%;"
+            ></div>
+          </div>
+          <div class="text-white">
+            You are learning <span id="learning-flashcards-count">0</span> out
+            of 81 words
+          </div>
+          <div class="progress">
+            <div
+              id="learning-flashcards-progress"
+              class="progress-bar progress-bar-danger"
+              style="width: 0.00%;"
+            ></div>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+    <script>
+      var words = {
+        distill: ["(v) purify; extract the essential elements of"],
+        document: [
+          "(v) support with evidence, cite sources in a detailed way, create documentary evidence of"
+        ],
+        supersede: [
+          "(v) replace, take the position of, cause to be disregarded as void or obsolete"
+        ],
+        implode: ["(v) burst inward"],
+        counterpoint: [
+          "(n) contrasting item, opposite; a complement; the use of contrast or interplay in a work of art"
+        ],
+        aseptic: ["free from germs"],
+        presumptive: [
+          "(adj) based on inference or assumption; providing reasonable grounds for belief"
+        ],
+        oscillate: ["(v) swing back and forth; waver, change one's mind"],
+        revamp: [
+          "renovate, redo, revise (verb); a restructuring, upgrade, etc. (noun)"
+        ],
+        egalitarian: [
+          "(adj) related to the belief in the equality of all people, esp. in political, economic, or social spheres"
+        ],
+        alienate: ["(v) cause to become unfriendly, hostile, or distant"],
+        hew: [
+          "strike, chop, or hack (as with an axe, sword. etc.); make or shape something (such as a statue) with a cutting tool"
+        ],
+        erroneous: ["(adj) mistaken, in error; improper, morally incorrect"],
+        confer: ["(v) consult, compare views; bestow or give"],
+        incorporate: [
+          "(v) combine, unite; form a legal corporation; embody, give physical form to"
+        ],
+        inconstancy: [
+          "fickleness, unreliability; the state of changing without good reason"
+        ],
+        unearth: ["(v) dig up, uncover, expose"],
+        chronological: ["(adj) arranged in or relating to time order"],
+        discomfiting: ["disconcerting, confusing, frustrating"],
+        deflect: [
+          "(v) cause to curve; turn aside, esp. from a straight course; avoid"
+        ],
+        rend: [
+          "tear violently, esp. to tear one's clothing or hair out of grief; pull apart, split, or tear away"
+        ],
+        phony: ["(adj) fake, counterfeit; insincere, not genuine"],
+        hotly: ["in an intense, fiery, or heated way"],
+        reactant: [
+          "something that reacts; a substance that undergoes a change in a chemical reaction"
+        ],
+        beneficent: ["doing good"],
+        activism: [
+          "(n) the practice of pursuing political or other goals through vigorous action, often including protests and demonstrations"
+        ],
+        harrow: [
+          "farming tool that breaks up soil (noun); painfully disturb or distress (verb)"
+        ],
+        disposition: ["(n) a person's general or natural mood; tendency"],
+        succeeding: ["(adj) coming after or following"],
+        annul: [
+          "make void or null, cancel, abolish (usually of laws or other established rules)"
+        ],
+        "status quo": ["(n) existing state or condition"],
+        plutocracy: ["rule by the wealthy"],
+        mired: [
+          "stuck, entangled (in something, like a swamp or muddy area), soiled"
+        ],
+        "countenance 2": ["(n, v) facial expression or face (noun);"],
+        compendium: ["concise but complete summary; a list or collection"],
+        tumultuous: [
+          "riotous, violently agitated, marked by disturbance or uproar; noisy, chaotic"
+        ],
+        predisposed: [
+          "(adj) having an inclination or tendency beforehand; susceptible"
+        ],
+        respectively: ["(adv) in the order given"],
+        console: [
+          "(v, n) lessen the suffering or grief of (verb); a control panel, or small table or cabinet (noun)"
+        ],
+        "appreciable (adj.)": ["enough to be perceived, considerable"],
+        layperson: [
+          "(n) a person who is not a member of the clergy or not a member of a particular profession (such as medicine, law, etc.)"
+        ],
+        pathological: [
+          "(adj) relating to or caused by disease; relating to compulsive bad behavior"
+        ],
+        ranks: ["(n) personnel; a group of people considered all together"],
+        "nevertheless/nonetheless": ["(adv) however, even so, despite that"],
+        adhere: ["(v) stick (to), such as with glue, or to a plan or belief"],
+        spearhead: ["(v) be the leader of"],
+        "defamatory (adj.)": ["slanderous, injurious to someone's reputation"],
+        elated: ["(adj) very happy, in high spirits"],
+        warranted: [
+          "(adj) justified, authorized (warrant can mean to justify or a justification, but can also mean to vouch for or guarantee)"
+        ],
+        offhand: [
+          "(adj) casual, informal; done without preparation or forethought; rude in a short way, brusque"
+        ],
+        makeshift: [
+          "(n, adj) a temporary, often improvised, substitute (noun); improvised for temporary use (adj)"
+        ],
+        hearken: ["(v) listen, pay attention to"],
+        metaphysical: [
+          "concerned with abstract thought, related to metaphysics (branch of philosophy concerned with explaining the nature of being and of the world); very subtle or abstruse"
+        ],
+        fluke: ["stroke of luck, something accidentally successful"],
+        skirt: ["(v) border, lie along the edge of , go around; evade"],
+        transgression: ["violation of a law, moral rule, order, etc.; sin"],
+        counterintuitive: ["(adj) against what one would intuitively expect"],
+        itinerary: ["travel schedule; detailed plan for a journey"],
+        foreshadow: ["(v) indicate or suggest beforehand, presage"],
+        pronounced: ["(adj) distinct, strong, clearly indicated"],
+        converge: ["(v) move towards one another or towards a point; unite"],
+        affectation: [
+          "(n) fake behavior (such as in speech or dress) adopted to give a certain impression"
+        ],
+        stint: [
+          "period of time spent doing something, or a specific, limited amount of work (noun); to be frugal, to get by on little (verb)"
+        ],
+        syntax: [
+          "the rules governing grammar and how words join to make sentences (or how words and symbols join in writing computer code), the study of these rules, or any system or orderly arrangement"
+        ],
+        collude: ["conspire; cooperate for illegal or fraudulent purposes"],
+        spectrum: [
+          "(n) a broad range of nevertheless related qualities or ideas, esp. those that overlap to create a continuous series (as in a color spectrum, where each color blends into the next in a continuous way)"
+        ],
+        convoke: ["call together, as to a meeting"],
+        insinuate: [
+          "hint, suggest slyly; introduce (an idea) into someone's mind in a subtle, artful way"
+        ],
+        synchronous: [
+          "(adj) happening at the same time; occurring at the same rate and thus happening together repeatedly"
+        ],
+        hallmark: [
+          "a mark indicating quality, purity, genuineness, etc.; any distinguishing characteristic"
+        ],
+        buffer: [
+          "(n) something that shields, protects, absorbs shock, or cushions"
+        ],
+        "arbitrary (adj.)": [
+          "based entirely on one's discretion; capricious, unreasonable, or having no basis"
+        ],
+        supplicate: ["(v) pray humbly; ask, beg, or seek in a humble way"],
+        baying: ["howling in a deep way, like a dog or wolf"],
+        coagulate: ["cause a liquid to become solid or semisolid"],
+        homage: ["honor or respect demonstrated publicly"],
+        secular: ["(adj) not religious or holy; pertaining to worldly things"],
+        whereas: ["(conjunction) while on the contrary, considering that"],
+        "approve or tolerate (verb)": [""],
+        erstwhile: ["former, previous (adj); in the past, formerly (adv)"],
+        ridden: ["dominated or burdened by"]
+      };
+    </script>
+    <script src="../script/index.js" debug="false"></script>
+    <script src="../script/custom.js" debug="false"></script>
+  </body>
+</html>

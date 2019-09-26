@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" content="text/html" http-equiv="Content-Type" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" media="screen" href="../index.css" debug="false" />
+    <title>
+      Other Important Words-ii - MerGRE
+    </title>
+  </head>
+  <body class="bg-secondary">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle collapsed"
+            data-target="#app-navbar-collapse"
+            data-toggle="collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a
+            alt="Magoosh Logo"
+            class="navbar-brand"
+            href="/flashcards/vocabulary"
+          >
+            Magoosh
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="app-navbar-collapse">
+          <ul class="nav navbar-nav" role="navigation"></ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container u-margin-T-xl">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <h3 class="clearfix mobile-header">
+            <a href="../index.html">&larr; Other Important Words-ii</a>
+            <small class="text-white pull-right">
+              <i class="fa fa-random"></i>
+              Words you don't know will reappear later
+            </small>
+          </h3>
+          <div class="flashcard-container u-margin-V-m">
+            <div class="flashcard">
+              <div class="front card flashcard-card">
+                <a href="#back"
+                  ><div class="card-block flashcard-content">
+                    <div class="label label-flashcard label-danger">
+                      learning
+                    </div>
+                    <h1 class="text-gray text-center flashcard-word">
+                      gregarious
+                    </h1>
+                  </div> </a
+                ><a
+                  class="card-footer text-center"
+                  data-loading-text="Loading definition..."
+                  href="#back"
+                  >Click to see meaning &rarr;
+                </a>
+              </div>
+              <div class="back card flashcard-card">
+                <div class="card-block flashcard-content">
+                  <div class="label label-flashcard label-danger">learning</div>
+                  <h3 class="flashcard-word"></h3>
+                  <div class="flashcard-text"></div>
+                  <span class="flashcard-status" style="display: none"></span>
+                </div>
+                <a
+                  class="card-footer card-footer-success text-center know-word"
+                  data-loading-text="Loading next word..."
+                  href="#"
+                  ><i class="fa fa-check"></i> I knew this word </a
+                ><a
+                  class="card-footer card-footer-danger text-center dont-know-word"
+                  data-loading-text="Loading next word..."
+                  href="#"
+                  ><i class="fa fa-remove"></i>
+                  I didn't know this word
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="text-white">
+            You have mastered <span id="mastered-flashcards-count">0</span> out
+            of 79 words
+          </div>
+          <div class="progress">
+            <div
+              id="mastered-flashcards-progress"
+              class="progress-bar progress-bar-success"
+              style="width: 0.00%;"
+            ></div>
+          </div>
+          <div class="text-white">
+            You are reviewing <span id="reviewing-flashcards-count">0</span> out
+            of 79 words
+          </div>
+          <div class="progress">
+            <div
+              id="reviewing-flashcards-progress"
+              class="progress-bar progress-bar-warning"
+              style="width: 0.00%;"
+            ></div>
+          </div>
+          <div class="text-white">
+            You are learning <span id="learning-flashcards-count">0</span> out
+            of 79 words
+          </div>
+          <div class="progress">
+            <div
+              id="learning-flashcards-progress"
+              class="progress-bar progress-bar-danger"
+              style="width: 0.00%;"
+            ></div>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+    <script>
+      var words = {
+        accede: ['agree, give consent; assume power (usually as "accede to")'],
+        scant: ["(adj) not enough or barely enough"],
+        constrict: ["(v) squeeze, compress; restrict the freedom of"],
+        levy: [
+          "(v, n) collect tax from, wage war on, or enlist for military service (verb); act of collecting tax or amount owed, or the drafting of troops into military service (noun)"
+        ],
+        reap: [
+          "(v) harvest, such as by cutting; gather; get as a result of one's effort"
+        ],
+        bygone: [
+          "(adj, n) past, former (adj); that which is in the past (usually plural noun)"
+        ],
+        balloon: ["swell or puff out; increase rapidly"],
+        polarized: ["(adj) divided into sharply opposed groups"],
+        solidarity: [
+          "fellowship in interests, feelings, responsibilities, etc., such as among a group of people or among classes, nations, etc."
+        ],
+        steeped: ["immersed (in), saturated (with)"],
+        partial: [
+          "(adj) biased, prejudiced, favoring one over the others; having a special liking for something or someone (usually partial to)"
+        ],
+        default: [
+          "(n, v) failure to act, neglect (noun); fail to fulfill an obligation, esp. a financial one (verb)"
+        ],
+        winnow: [
+          "sift, analyze critically, separate the useful part from the worthless part"
+        ],
+        "per se": ["intrinsically; by itself; in itself"],
+        incentive: [
+          "(n) something that encourages greater action or effort, such as a reward"
+        ],
+        hierarchy: [
+          "(n) a ranked series; a classification of people according to rank, ability, etc.; a ruling body"
+        ],
+        stratum: [
+          "one of many layers (such as in a rock formation or in the classes of a society)"
+        ],
+        autonomous: ["(adj) self-governing, independent"],
+        entitlement: [
+          "(n) having the right to certain privileges; believing, sometimes without cause, that one deserves or has a right to certain privileges"
+        ],
+        "hand-wringing": [
+          "grasping, squeezing, etc. of the hands as an expression of nervousness, guilt, etc.; extend debate over what to do about an issue"
+        ],
+        abreast: [
+          'side-by-side. the more common "abreast of" means keeping up with, staying aware of, or remaining equal in progress with.'
+        ],
+        "appease (v.)": [
+          "pacify, satisfy, relieve; concede to be belligerent demands, sometimes at the expense of principles"
+        ],
+        scathing: [
+          "(adj) severe, injurious; bitterly harsh or critical (as a remark)"
+        ],
+        lull: [
+          "(n, v) soothe or cause to fall asleep (as in a lullaby); quiet down; make to feel secure, sometimes falsely (verb); a period of calm or quiet (noun)"
+        ],
+        "juncture (2)": [
+          "(n) critical point in time, such as a crisis or a time when a decision is necessary; a place where two things are joined together"
+        ],
+        via: [
+          "through, by means of, by way of (by a route that goes through or touches)"
+        ],
+        discriminating: [
+          "(adj) judicious, discerning, having good judgment or insight"
+        ],
+        delimit: ["fix, mark, or define the boundaries of"],
+        secrete: [
+          "produce and release a substance from a cell or gland of the body for a functional purpose"
+        ],
+        hardy: [
+          "(adj) strong and able to accept difficult or unpleasant conditions"
+        ],
+        interplay: ["interaction, reciprocal relationship or influence"],
+        "optimal/optimum": ["(adj) best, most desirable or favorable"],
+        detached: [
+          "(adj) impartial, disinterested; unconcerned, distant, aloof"
+        ],
+        conversely: ["(adv) in an opposite way; on the other hand"],
+        clinch: [
+          "(v) make final or settle conclusively; to fasten or hold together"
+        ],
+        fleeting: ["(adj) passing quickly, transitory"],
+        apostle: [
+          "pioneer of a reform movement (originally, an early follower of jesus)"
+        ],
+        contextualize: [
+          "(v) place in context, such as by giving the background or circumstances"
+        ],
+        "stymie or stymy": [
+          "(v, n) block, hinder, or thwart (verb); an obstacle (noun)"
+        ],
+        qualified: ["(adj) modified, limited, conditional on something else"],
+        apprise: ["inform, give notice to"],
+        echelon: ["a level, rank or grade; the people at that level"],
+        impermeable: [
+          "impassable, not allowing passage through (such as by a liquid)"
+        ],
+        token: [
+          "sign, symbol, mark, badge; souvenir, memento; coin-like disk used as currency for subways, arcade games, etc.; sample, or person, thing, idea taken to represent an entire group (noun); of very little or merely symbolic value (adj)"
+        ],
+        render: [
+          "(v) give, submit, surrender; translate; declare formally; cause to become"
+        ],
+        "e.g.": ["(abbre.) for example, such as"],
+        grating: ["irritating; harsh or discordant (of a noise); scraping"],
+        likewise: ["(adv) also, in addition to; similarly, in the same way"],
+        "satiate or sate": [
+          "(v) to fully satisfy; to go beyond satisfying to the point of excess (possibly inducing disgust, tiredness, etc.)"
+        ],
+        disperse: ["(v) scatter, spread widely, cause to vanish"],
+        diffuse: [
+          "spread widely, disseminate (verb); dispersed, widely spread out, or wordy and going off-topic (adj)"
+        ],
+        fidelity: [
+          "(n) faithful, loyalty; strict observance of duty; accuracy in reproducing a sound or image"
+        ],
+        "viscid or viscous": [
+          "thick, adhesive, or covered in something sticky"
+        ],
+        virtual: [
+          "(adj) existing only in the mind or by means of a computer network; existing in results or in essence but not officially or in name"
+        ],
+        précis: ["concise summary, abstract"],
+        grandstand: ["perform showily in an attempt to impress onlookers"],
+        figurative: [
+          "(adj) metaphorical, based on figures of speech; containing many figures of speech (as fancy-sounding writing); related to portraying human or animals figures"
+        ],
+        connote: [
+          "suggest or imply in addition to the precise, literal meaning"
+        ],
+        brandish: ["shake, wave, or flourish, as a weapon"],
+        stark: [
+          "(adj) complete, total, utter; harsh or grim; extremely simple, severe, blunt, or plain"
+        ],
+        moreover: ["(adv) besides; in addition to what was just stated"],
+        providential: [
+          "lucky, fortunate, or relating to divine care (the idea that a deity has helped or cared for a person)"
+        ],
+        nontrivial: ["important or big enough to matter"],
+        subside: [
+          "(v) sink, settle down, become less active; return to a normal level"
+        ],
+        aggregate: [
+          "(v, adj) gather together, amount to (verb); constituting a whole made up of constituent parts (adj)"
+        ],
+        insensible: ["incapable of feeling; unconscious, unaware"],
+        supposition: [
+          "assumption, hypothesis, something that has been supposed"
+        ],
+        redound: [
+          "to have a good or bad effect, esp. as a result of a person's efforts or actions (usually used with to, on, or upon)"
+        ],
+        elevate: [
+          "(v) raise, lift up; lift the spirits of; move up to a higher rank or status or raise up to a higher spiritual or intellectual plane"
+        ],
+        unsparing: [
+          "generous, lavish (as in not sparing any help or gifts to others); unmerciful, harsh (as in not sparing any criticism)"
+        ],
+        counterproductive: [
+          "(adj) defeating the purpose; preventing the intended goal"
+        ],
+        emaciate: ["make abnormally thin, cause to physically waste away"],
+        stingy: ["(adj) not generous with money, reluctant to spend or give"],
+        peddle: [
+          "travel around while selling; sell illegally; give out or disseminate"
+        ],
+        aspersions: ["damaging remarks, defamation, slander"],
+        slack: [
+          "(adj, v, n) loose, negligent, lazy, weak (adj); neglect to so one's duties; loosen up, relax (verb); period of little work (noun)"
+        ],
+        vintage: [
+          "(adj, n) related to items of high quality from a previous era, old-fashioned, antique (adj); the wine of a particular year (noun)"
+        ],
+        offset: [
+          "(v, n) counteract, compensate for (verb); a counterbalance (noun)"
+        ],
+        diverge: [
+          "(v) differ, deviate; branch off or turn aside, as from a path"
+        ]
+      };
+    </script>
+    <script src="../script/index.js" debug="false"></script>
+    <script src="../script/custom.js" debug="false"></script>
+  </body>
+</html>
