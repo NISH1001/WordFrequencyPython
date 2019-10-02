@@ -6,11 +6,18 @@ import json
 
 def main():
     data = pd.read_csv('WordLists/words.csv')
+    data = data.fillna(0)
     wmap = {}
     for d in data.iterrows():
         word = d[1]['Word']
-        meaning  = d[1]['Meaning']
-        wmap[word] = meaning
+        meanings  = [d[1]['Meaning']]
+        example = d[1]['Example']
+        synonyms = d[1]['Synonyms']
+        if synonyms:
+            meanings.append(synonyms)
+        if example:
+            meanings.append("Example:: {}".format(example))
+        wmap[word] = meanings
     with open('output/words.json', 'w') as f:
         json.dump(wmap, f, indent=4)
 
