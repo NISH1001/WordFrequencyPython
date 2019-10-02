@@ -1,7 +1,6 @@
 #
 #
 # ignorance is bliss
-*.json
 *.zip
 
 # Byte-compiled / optimized / DLL files
